@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deb pg 1</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .raw {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .ad li {
+            display: inline-block;
+            padding: 20px;
+
+        }
+
+        .ad li:hover {
+            background-color: rgb(135, 104, 78);
+        }
+
+        .img1 img {
+            padding-top: 15px;
+            margin: 0px 15px;
+
+        }
+
+        .mainimg {
+            width: 100%;
+            height: 500px;
+            background-image: url('./images/singer.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: end;
+
+        }
+
+        .big {
+            color: white;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .small {
+            color: white;
+            font-size: 25px;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .text p {
+            text-align: justify;
+
+        }
+
+        .mainbox {
+            width: 100%;
+            justify-content: center;
+            display: flex;
+        }
+
+        .boxcontainer {
+            width: 70%;
+        }
+
+        .textline {
+            padding: 40px 0px;
+        }
+
+        .text h1 {
+            padding: 10px;
+        }
+
+        .text h6 {
+            padding: 15px;
+            font-size: 15px;
+        }
+
+        .text p {
+            padding: 10px;
+        }
+
+        .boxraw {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        .boxline h1 {
+            text-align: center;
+        }
+
+        .boxline {
+            margin: 0px 20px;
+        }
+
+        .boxline img {
+            width: 100%;
+            
+        }
+
+        .boxline img:hover {
+            opacity: 0.5;
+        }
+
+        .mainbox2 {
+            background-color: black;
+            padding: 20px 0px;
+        }
+
+        .text2 {
+            color: white;
+            text-align: center;
+        }
+
+        .text2 h1 {
+            padding: 10px 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .text2 p {
+            padding: 20px;
+        }
+
+        .boxname {
+            background-color: white;
+        }
+
+        .boxname p {
+            padding: 10px;
+        }
+
+        .sidebox {
+            background-color: red;
+            padding: 5px;
+            margin: 20px;
+        }
+
+        .endbox {
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            padding: 2px 10px;
+            float: right;
+        }
+
+        .text3 {
+            color: black;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .boximg {
+            display: flex;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .ny {
+            padding: 20px;
+            width: 100%;
+        }
+
+        .ny img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .ny img:hover {
+            opacity: 0.5;
+        }
+
+        .text3 h3 {
+            padding: 10px 0px;
+        }
+
+        .text3 p {
+            padding: 10px 0px;
+        }
+
+        .box2 {
+            width: 100%;
+            justify-content: center;
+            display: flex;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            color: darkgrey;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .heading {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .box3 {
+            display: flex;
+            padding-top: 10px;
+            margin: 0px auto;
+            width: 70%;
+            justify-content: space-between
+        }
+        .form {
+            width: 50%;
+        }
+        .sidebar {
+            width: ;
+        }
+        .line1 {
+            justify-content: space-between;
+            display: flex ;
+        }
+
+        .line2 input { 
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .line1 input {
+            width: 48%;
+            padding: 10px;
+            
+        }
+        .btn3 {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            display: inline-block;
+            text-decoration: none;
+            float: right;
+            margin-top: 20px;
+        }
+        .btn3:hover {
+            background-color: rgb(94, 84, 84);
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .img {
+            padding-top: 20px;
+            width: 100%;
+        }
+        .img img {
+           
+            width: 100%;
+        }
+        @media screen and (max-width:500px){
+            .ad {
+                display: none;
+            }
+            .boxcontainer {
+                width: 100%;
+                }
+            .mainimg {
+                height: 200px;
+            }
+            .big {
+                font-size: 20px;
+            }
+            .small {
+                font-size: 12px;
+            }
+            .boximg {
+                flex-direction: column;
+                width: 100%;
+            }
+            .boxraw {
+                flex-direction: column;
+                margin: 0px;
+            }
+            .box3 {
+                flex-direction: column;
+            }
+            .form {
+                width: 100%;
+            }
+            .line1 input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .line1 {
+                display: block;
+            }
+            .line2 input {
+                margin-top: 0px;
+            } 
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="raw">
+        <ul class="ad">
+            <li>HOME</li>
+            <li>BAND</li>
+            <li>TOUR</li>
+            <li>CONTACT</li>
+            <li>MORE</li>
+        </ul>
+        <div class="img1">
+            <img src="./images/search.png" alt="img" width="30px">
+        </div>
+    </nav>
+    <div class="mainimg">
+        <div class="textline">
+            <p class="big">
+                New York
+            </p>
+            <p class="small">
+                Thank you, New York - A night we won't forget.
+            </p>
+        </div>
+    </div>
+    <div class="mainbox">
+        <div class="boxcontainer">
+            <div class="text">
+                <h1>THE BAND</h1>
+                <h6>We love music</h6>
+                <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </div>
+            <div class="boxraw">
+                <div class="boxline">
+                    <h1>James</h1>
+                    <img src="./images/camera1.jpg" alt="boy">
+                </div>
+                <div class="boxline">
+                    <h1>James</h1>
+                    <img src="./images/camera1.jpg" alt="boy">
+                </div>
+                <div class="boxline">
+                    <h1>James</h1>
+                    <img src="./images/camera1.jpg" alt="boy">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainbox2">
+        <div class="box2">
+            <div class="text2">
+                <h1> TOUR DATES </h1>
+                <p> Remember to book your tickets! </p>
+            </div>
+        </div>
+        <div class=" boxname">
+            <p>September <span class="sidebox">Sold out </span></p>
+            <hr>
+            <p>October <span class="sidebox ">Sold out <span></p>
+            <hr>
+            <p>November <span class="endbox">3</span></p>
+        </div>
+        <div class="boximg">
+            <div class="ny">
+                <img src="./images/newyork.jpg" alt="ny">
+                <div class="text3">
+                    <h3>New York</h3>
+                    <p>Fri 27 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut<br> rutrum sed vitae justo.</p>
+                    <a href="#" class="btn">Buy tickets</a>
+                </div>
+            </div>
+            <div class="ny">
+                <img src="./images/paris.jpg" alt="paris">
+                <div class="text3">
+                    <h3>Paris</h3>
+                    <p>Sat 28 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut<br> rutrum sed vitae justo.</p>
+                    <a href="#" class="btn">Buy tickets</a>
+                </div>
+            </div>
+            <div class="ny">
+                <img src="./images/san.jpg" alt="sf">
+                <div class="text3">
+                    <h3>San Francisco</h3>
+                    <p>Sun 29 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut<br> rutrum sed vitae justo.</p>
+                    <a href="#" class="btn">Buy tickets</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainbox3">
+        <div class="heading">
+            <h1>CONTACT</h1>
+            <p><i>Fan? Drop a note!</i></p>
+        </div>
+        <div class="box3">
+            <div class="sidebar">
+                <ul>
+                    <li>Chicago, US</li>
+                    <li>Phone: +00 151515</li>
+                    <li>Email: mail@mail.com</li>
+                </ul>
+            </div>
+            <div class="form">
+                <div class="line1">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="line2">
+                    <input type="text" placeholder="Message">
+                    <a href="#" class="btn3">Send</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="img">
+        <img src="./images/map.jpg">
+    </div>
+    <footer>
+        <p>Powered by <a href="#">w3.css</a></p>
+    </footer>
+</body>
+
+</html>
